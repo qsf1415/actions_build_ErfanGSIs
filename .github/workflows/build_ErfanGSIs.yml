@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.4.27/miui_CRUX_20.4.27_301d2c2aef_10.0.zip 
+  ROM_URL: https://download.c.realme.com/osupdate/RMX1991_11_OTA_1130_all_CRcy5qV4XdhW.ozip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
