@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX1991_11_OTA_1130_all_CRcy5qV4XdhW.ozip
-  ROM_NAME: MIUI
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.1.0.0/cn/20200429154837/faf99a75/update.zip
+  ROM_NAME: Flyme
   TZ: Asia/Shanghai
 
 jobs:
