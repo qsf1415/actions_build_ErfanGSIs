@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.1.0.0/cn/20200429154837/faf99a75/update.zip
-  ROM_NAME: Flyme
+  ROM_URL: http://fs.oppo.com/3/oppowww/androidrom/pafm00/PAFM00_11_OTA_3090_all_zl3f9pDDviaO.ozip
+  ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
 jobs:
