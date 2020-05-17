@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://romdownload.nubia.com/%E7%BA%A2%E9%AD%943/V3.22/NX629J-update.zip
+  ROM_URL: http://v.15bus.com/508/20200517/508_FkuM6XsD_NX629J-update.zip?attname=NX629J-update.zip&e=1589761133&token=qwUSUX3JOkW8yB3USN9S8dHDz6Doamrb49bDyYDl:vb-ozHxynh8WkG0PdD8_E3dRmB4=
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
