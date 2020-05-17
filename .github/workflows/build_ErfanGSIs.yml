@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://fs.oppo.com/3/oppowww/androidrom/pafm00/PAFM00_11_OTA_3090_all_zl3f9pDDviaO.ozip
+  ROM_URL: http://romdownload.nubia.com/%E7%BA%A2%E9%AD%943/V3.22/NX629J-update.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
