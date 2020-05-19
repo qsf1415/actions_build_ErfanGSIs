@@ -13,9 +13,9 @@ on:
   watch:
     types: [started]
     
-env:
-  ROM_URL: http://v.15bus.com/508/20200517/508_FkuM6XsD_NX629J-update.zip?attname=NX629J-update.zip&e=1589761133&token=qwUSUX3JOkW8yB3USN9S8dHDz6Doamrb49bDyYDl:vb-ozHxynh8WkG0PdD8_E3dRmB4=
-  ROM_NAME: MIUI
+env
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/m2091/8.1.2.0/cn/20200430030803/b9a2a945/update.zip
+  ROM_NAME: ZenUI
   TZ: Asia/Shanghai
 
 jobs:
@@ -49,8 +49,8 @@ jobs:
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
-              sudo sed -i '7c AB=false' url2GSI.sh
-              sudo sed -i '8c Aonly=true' url2GSI.sh
+              sudo sed -i '7c AB=true' url2GSI.sh
+              sudo sed -i '8c Aonly=false' url2GSI.sh
        
        - name: Download Stock Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
