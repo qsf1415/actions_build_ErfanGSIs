@@ -13,9 +13,9 @@ on:
   watch:
     types: [started]
     
-env
-  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/m2091/8.1.2.0/cn/20200430030803/b9a2a945/update.zip
-  ROM_NAME: ZenUI
+env:
+  ROM_URL: http://romdownload.nubia.com/%E7%BA%A2%E9%AD%943/V3.22/NX629J-update.zip
+  ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
 jobs:
@@ -42,7 +42,7 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk wget
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/qsf1415/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
        
        - name: Setting up ErfanGSI requirements
          run: |
@@ -64,6 +64,5 @@ jobs:
          run: |
               curl -sL https://git.io/file-transfer | sh
               ./transfer bit final/GSI.zip
-
          
             
