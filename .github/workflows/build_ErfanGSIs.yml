@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/m2091/8.1.2.0/cn/20200430030803/b9a2a945/update.zip
-  ROM_NAME: MIUI
+  ROM_URL: https://dl3.smartisan.com/ota/rls.delta-mol-7.0.0-20200429-SEKSA.delta-user/202005061620/7.3.1-202005061416-user-dlt-50c0afe951.zip
+  ROM_NAME: ZenUI
   TZ: Asia/Shanghai
 
 jobs:
