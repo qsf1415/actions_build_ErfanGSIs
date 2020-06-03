@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://cdn-test-ota.blackshark.com/DLT-A0/20200513094533-darklighter-ota-signed_by_xiaomi_020306a54c93e641ac07f6f6880f7828.zip
-  ROM_NAME: JoyUI
+  ROM_URL: https://dl3.smartisan.com/ota/mol.delta-ard10-rom-7.5.0-SEKSA.delta-user/202005281841/7.5.0_beta-202005281649-user-dlt-8c0c7feecb.zip
+  ROM_NAME: ZenUI
   TZ: Asia/Shanghai
 
 jobs:
