@@ -58,7 +58,7 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/MIUI.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/MIUI-K20-AB-6.15-GSI-BY狐白.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
