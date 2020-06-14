@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://dl3.smartisan.com/ota/mol.delta-ard10-rom-7.5.0-SEKSA.delta-user/202005281841/7.5.0_beta-202005281649-user-dlt-8c0c7feecb.zip
-  ROM_NAME: ZenUI
+  ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QFJCNXM/miui_DAVINCI_V12.0.2.0.QFJCNXM_f108cfd789_10.0.zip
+  ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
 jobs:
@@ -58,11 +58,11 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/GSI.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/MIUI.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/GSI.zip
+          files: final/MIUI-K20-AB-6.15-GSI-BY狐白.zip
           prerelease: false
            
