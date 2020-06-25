@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.20.6.24/cn_daily/20200624150231/8cc0eca8/update.zip
-  ROM_NAME: FIyme
+  ROM_NAME: Flyme
   TZ: Asia/Shanghai
 
 jobs:
