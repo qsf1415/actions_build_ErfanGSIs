@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/V12.0.1.0.QFACNXM/miui_CEPHEUS_V12.0.1.0.QFACNXM_e22f3182e3_10.0.zip
-  ROM_NAME: MIUI
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.20.6.24/cn_daily/20200624150231/8cc0eca8/update.zip
+  ROM_NAME: FIyme
   TZ: Asia/Shanghai
 
 jobs:
@@ -58,11 +58,11 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/MIUI-MI9-AB-6.16-GSI-BY狐白.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/FIyme-16s-AB-6.25-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/MIUI-MI9-AB-6.16-GSI-BY狐白.zip
+          files: final/FIyme-16s-AB-6.25-GSI-BYqsf.zip
           prerelease: false
            
