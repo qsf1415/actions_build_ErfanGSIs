@@ -58,11 +58,11 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/FIyme-16s-AB-6.25-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/Flyme-16s-AB-6.25-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/FIyme-16s-AB-6.25-GSI-BYqsf.zip
+          files: final/Flyme-16s-AB-6.25-GSI-BYqsf.zip
           prerelease: false
            
