@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.20.6.24/cn_daily/20200624150231/8cc0eca8/update.zip
-  ROM_NAME: Flyme
+  ROM_URL: https://hugeota.d.miui.com/20.6.30/miui_MI8SE_20.6.30_4d1b7a79fc_10.0.zip
+  ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
 jobs:
@@ -58,11 +58,11 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/Flyme-16s-AB-6.25-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/MIUI-8se-AB-10-6.29-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/Flyme-16s-AB-6.25-GSI-BYqsf.zip
+          files: final/MIUI-8se-AB-10-6.29-GSI-BYqsf.zip
           prerelease: false
            
