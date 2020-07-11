@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.7.8/miui_TUCANA_20.7.8_4b5c1223d4_10.0.zip
+  ROM_URL: https://hugeota.d.miui.com/20.7.9/miui_MI8SE_20.7.9_2531121c22_10.0.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -58,11 +58,11 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/MIUI-8se-AB-10-7.1-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/MIUI-8se-AB-10-7.9-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/MIUI-8se-AB-10-7.1-GSI-BYqsf.zip
+          files: final/MIUI-8se-AB-10-7.9-GSI-BYqsf.zip
           prerelease: false
            
