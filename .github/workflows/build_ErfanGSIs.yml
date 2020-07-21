@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.5.29/miui_CEPHEUS_20.5.29_d531f234ac_10.0.zip
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s_Pro/8.20.7.21/cn_daily/20200721104004/04895e9f/update.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -58,11 +58,11 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/MIUI-MI9-AB-10-5.29-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/Flyme-16spro-AB-10-7.21-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/MIUI-MI9-AB-10-5.29-GSI-BYqsf.zip
+          files: final/Flyme-16spro-AB-10-7.21-GSI-BYqsf.zip
           prerelease: false
            
