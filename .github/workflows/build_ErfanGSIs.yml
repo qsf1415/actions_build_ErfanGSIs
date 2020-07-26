@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s_Pro/8.20.7.21/cn_daily/20200721104004/04895e9f/update.zip
+  ROM_URL: https://coloroswebsitefs.coloros.com/coloroswebsite-coloros-com/grs_20200702163059/PAFM00_11_OTA_3120_all_3pSKNdBbr5Ck.ozip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -58,11 +58,11 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/Flyme-16spro-AB-10-7.21-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/c7-16spro-AB-10-7.21-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/Flyme-16spro-AB-10-7.21-GSI-BYqsf.zip
+          files: final/c7-16spro-AB-10-7.21-GSI-BYqsf.zip
           prerelease: false
            
