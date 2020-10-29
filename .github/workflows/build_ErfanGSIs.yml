@@ -5,12 +5,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX1991_11_OTA_1200_all_oZQ7eB7EsXK3.ozip
-  ROM_NAME: MIUI
+  ROM_URL: https://cdn-test-ota.blackshark.com/DLT-A0/20201023142603-darklighter-ota-signed_by_xiaomi_53fe350d48a70038ccbc146cf26383be.zip
+  ROM_NAME: JoyUI
   BUILD_AB: true
   BUILD_AONLY: false
   ROM_AONLY: MAX3_Aonly_20.7.30-eu.7z
-  ROM_AB: MIUI-8lite-AB-20.8.20-GSI.7z
+  ROM_AB: JoyUI-2Pro-AB-20.10.29-GSI.7z
 
 jobs:
   build:
