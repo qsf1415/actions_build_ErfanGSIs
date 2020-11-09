@@ -70,7 +70,7 @@ jobs:
          if: env.BUILD_AB == 'true'
          run: 7za a -t7z -r $ROM_AB ErfanGSIs/output/*
 
-       - name: 7z AB GSI  
+       - name: Upload AB GSI 
          run: |
               mkdir final
               zip -r final/JoyUI-2Pro-AB-10-11.9-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
