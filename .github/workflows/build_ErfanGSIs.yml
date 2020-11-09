@@ -70,15 +70,8 @@ jobs:
          if: env.BUILD_AB == 'true'
          run: 7za a -t7z -r $ROM_AB ErfanGSIs/output/*
 
-       - name: 7z GSI  
-          if: env.BUILD_AB == 'true'
-          run: |
-              mkdir final
-              zip -r final/JoyUI-2Pro-AB-10-10. -GSI-BYqsf.7z/home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
-       - name: Update release
-         uses: johnwbyrd/update-release@v1.0.0
-         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/JoyUI-2Pro-AB-10-10.9-GSI-BYqsf.7z
-          prerelease: false
-            
+       - name: Upload AB GSI to WeTransfer
+         if: env.BUILD_AB == 'true'
+         run: |
+              curl -sL https://git.io/file-transfer | sh
+              ./transfer wet $ROM_AB
