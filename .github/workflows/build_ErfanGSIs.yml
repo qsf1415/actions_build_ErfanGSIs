@@ -10,7 +10,7 @@ env:
   BUILD_AB: true
   BUILD_AONLY: false
   ROM_AONLY: MAX3_Aonly_20.7.30-eu.7z
-  ROM_AB: JoyUI-2Pro-AB-20.10.29-GSI.7z
+  ROM_AB: JoyUI-2Pro-AB-20.11.9-GSI.7z
 
 jobs:
   build:
@@ -71,6 +71,7 @@ jobs:
          run: 7za a -t7z -r $ROM_AB ErfanGSIs/output/*
 
        - name: Upload AB GSI 
+         if: env.BUILD_AB == 'true'
          run: |
               mkdir final
               zip -r final/JoyUI-2Pro-AB-10-11.9-GSI-BYqsf.7z /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
