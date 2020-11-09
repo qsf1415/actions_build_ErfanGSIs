@@ -10,7 +10,7 @@ env:
   BUILD_AB: true
   BUILD_AONLY: false
   ROM_AONLY: MAX3_Aonly_20.7.30-eu.7z
-  ROM_AB: JoyUI-2Pro-AB-20.11.9-GSI.7z
+  ROM_AB: JoyUI-2Pro-AB-10-10.9-GSI-BYqsf.7z
 
 jobs:
   build:
