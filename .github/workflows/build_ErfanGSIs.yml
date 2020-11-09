@@ -71,7 +71,8 @@ jobs:
          run: 7za a -t7z -r $ROM_AB ErfanGSIs/output/*
 
        - name: 7z GSI  
-         run: |
+          if: env.BUILD_AB == 'true'
+          run: |
               mkdir final
               zip -r final/JoyUI-2Pro-AB-10-10. -GSI-BYqsf.7z/home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
