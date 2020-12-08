@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s/8.20.6.24/cn_daily/20200624150231/8cc0eca8/update.zip
+  ROM_URL: https://ip1824741756.out.azhimalayanvh.com/Firmware/Flyme/note9/8.20.11.10/cn_daily/20201110043136/ad9e0bc2/update.zip?ali_redirect_domain=download.meizu.com&ali_redirect_ex_ftag=6e3f8387deabb575112c062276c11380103783c95ade5b70&ali_redirect_ex_tmining_ts=1607425431&ali_redirect_ex_tmining_expire=3600&ali_redirect_ex_hot=100 
   ROM_NAME: Flyme
   TZ: Asia/Shanghai
 
@@ -58,11 +58,11 @@ jobs:
        - name: Zip GSI  
          run: |
               mkdir final
-              zip -r final/Flyme-16s-AB-6.25-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
+              zip -r final/Flyme-note9-AB-12.8-GSI-BYqsf.zip /home/runner/work/actions_build_ErfanGSIs/actions_build_ErfanGSIs/ErfanGSIs/output/
        - name: Update release
          uses: johnwbyrd/update-release@v1.0.0
          with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: final/Flyme-16s-AB-6.25-GSI-BYqsf.zip
+          files: final/Flyme-note9-AB-12.8-GSI-BYqsf.zip
           prerelease: false
            
